@@ -1,0 +1,32 @@
+{
+  "name": "binary-district-contracts",
+  "version": "1.0.0",
+  "description": "Example solidity contracts for education purposes",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "zeppelin-solidity": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle compile && truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alerdenisov/binary-district-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "erc20",
+    "smart-contractracts"
+  ],
+  "author": "Aler Denisov <aler.zampillo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alerdenisov/binary-district-contracts/issues"
+  },
+  "homepage": "https://github.com/alerdenisov/binary-district-contracts#readme"
+}
