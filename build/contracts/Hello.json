@@ -1,0 +1,47 @@
+{
+  "contract_name": "Hello",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastestGreeter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "greet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "Greet",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6101628061001f6000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e9665e88114610048578063cfae321714610084575b600080fd5b341561005357600080fd5b61005b6100ab565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561008f57600080fd5b6100976100c7565b604051901515815260200160405180910390f35b60005473ffffffffffffffffffffffffffffffffffffffff1681565b6000805473ffffffffffffffffffffffffffffffffffffffff19163373ffffffffffffffffffffffffffffffffffffffff90811691909117808355167fcb0eeba857083a1974b9411330cdceca67ee763034d90285571303171586f8bd60405160405180910390a25060015b905600a165627a7a72305820dbeb35aa9f4bdff145f42faa98eaa47681fde3860a7d3f8b3939a72d48b540f90029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1509396575046
+}
