@@ -12,7 +12,7 @@ contract VotingContract {
   event Finish();
 }
 
-contract StakeVoting is VotingContract {
+contract DistrictProposal is VotingContract {
   using SafeMath for uint;
 
   mapping (address => bool) votingList;
@@ -58,8 +58,4 @@ contract StakeVoting is VotingContract {
     require(agreeCount.add(rejectCount) > totalStake / 100);
     return agreeCount / rejectCount > 2;
   }
-}
-
-contract DistrictProposal {
-
 }

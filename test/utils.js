@@ -1,5 +1,9 @@
 module.exports = {
-  expectThrow: async (promise, msg) => {
+  toToken (number) {
+    return Math.floor(number * Math.pow(10, 18))
+  },
+
+  async expectThrow (promise, msg) {
     let result 
     try {
       result = await promise
@@ -19,10 +23,13 @@ module.exports = {
       assert.fail('Expected throw not received')
     }
   },
-  promisify: (inner) => new Promise((resolve, reject) =>
-    inner((err, res) => {
-      if (err) { reject(err) }
-      resolve(res);
-    })
-  )
+
+  promisify (inner) {
+    return new Promise((resolve, reject) =>
+      inner((err, res) => {
+        if (err) { reject(err) }
+        resolve(res);
+      })
+    );
+  }
 }
