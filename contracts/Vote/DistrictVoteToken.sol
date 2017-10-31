@@ -24,9 +24,7 @@ contract DistrictVoteToken is MintableToken {
   function bulkMint(address[] _accounts, uint[] _amounts) onlyOwner public returns (bool) {
     require(_accounts.length == _amounts.length);
     for (uint16 index = 0; index < _accounts.length; index++) {
-      if(!mint(_accounts[index], _amounts[index])) {
-        return false;
-      }
+      assert(mint(_accounts[index], _amounts[index]));
     }
 
     return true;
